@@ -32,7 +32,7 @@ public class Check implements Listener {
                 String dataV = String.valueOf(data != null ? ChatColor.DARK_GRAY + "(" + ChatColor.RED + data + ChatColor.DARK_GRAY + ")" : "");
                 String vl = String.valueOf(Hawk.getInstance().getDataManager().getViolatonsPlayer(player, this));
                 playerLoop.sendMessage(ChatColor.DARK_GRAY + "(" + ChatColor.YELLOW + "!" + ChatColor.DARK_GRAY + ") " + ChatColor.YELLOW + player.getName() + ChatColor.DARK_GRAY + " might be using " + ChatColor.YELLOW + getName() + ChatColor.YELLOW + " VL: " + vl + " " + ChatColor.DARK_GRAY + dataV);
-                EmbededMessages.sendCheatLog(Main.jda.getTextChannelById("462738904299077633"));
+                EmbededMessages.sendCheatLog(Main.jda.getTextChannelsByName("anticheat", true).get(0));
             }
         }
     }
