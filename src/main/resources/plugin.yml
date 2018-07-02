@@ -1,0 +1,9 @@
+name: Hawk
+main: me.yolosanta.hawk.Hawk
+author: YoloSanta
+version: 1.0-ALPHA
+
+commands:
+  hawk:
+    usage: /<command>
+    aliases: [ac]
